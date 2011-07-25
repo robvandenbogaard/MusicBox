@@ -1,0 +1,19 @@
+==== MusicBox ====
+
+Emulates a (hand-cranked) music box to be able to review punch card compositions
+before actually punching paper.
+
+=== Installation ===
+
+* have TiMidity installed (not needed if you want to connect to a different midi device anyway)
+* gem install midiator
+
+=== Usage ===
+
+* edit test.music or create a new file
+* if created a new file, edit musicbox and change the filename test.music to match the new one
+* execute ruby musicbox.rb
+
+MusicBox tries to connect the midi outs and ins to TiMidity as a convenience service (using aconnect).
+If this fails it falls back to a prompt requiring manual console action.
+
